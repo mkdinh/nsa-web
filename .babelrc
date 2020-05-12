@@ -1,0 +1,16 @@
+{
+    "plugins": [
+      "@babel/plugin-syntax-dynamic-import",
+      [
+        "react-css-modules",
+        {
+          "filetypes": {
+            ".less": {
+              "syntax": "postcss-less"
+            }
+          },
+          "generateScopedName": "[path][name]__[local]--[hash:base64:5]"
+        }
+      ]
+    ]
+  }
