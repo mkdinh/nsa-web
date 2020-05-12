@@ -2,7 +2,7 @@ const { override, addLessLoader, addWebpackAlias, useBabelRc } = require('custom
 const { addGlobalLess } = require('./utils');
 const aliases = require('./aliases');
 
-const lessFiles = ['global.less', 'colors.less', 'fonts.less', 'layout.less', 'media.less'];
+const lessFiles = ['global.less', 'colors.less', 'layout.less'];
 
 module.exports = override(
   useBabelRc(),

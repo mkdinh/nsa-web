@@ -11,6 +11,7 @@
     "react": "^16.13.1",
     "react-app-rewired": "^2.1.6",
     "react-dom": "^16.13.1",
+    "react-loading-spinkit": "^0.1.8",
     "react-redux": "^7.2.0",
     "react-scripts": "3.4.1",
     "redux": "^4.0.5"
@@ -42,6 +43,7 @@
     "babel-plugin-import": "^1.11.2",
     "babel-plugin-react-css-modules": "^5.2.6",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "css-loader": "2.1.1",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-config-standard": "^12.0.0",
