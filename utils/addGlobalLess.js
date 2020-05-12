@@ -13,10 +13,10 @@ module.exports = files => config => {
   const loaders = config.module.rules.find(rule => Array.isArray(rule.oneOf)).oneOf;
 
   // Get module scss loader
-  const scssLoaders = loaders.filter(l => l.test && '.module.less'.match(l.test));
+  const lessLoaders = loaders.filter(l => l.test && '.module.less'.match(l.test));
 
   // transform scss content to include import statement
-  scssLoaders.forEach(loader => {
+  lessLoaders.forEach(loader => {
     if (loader.use) {
       loader.use.push({
         loader: 'text-transform-loader',

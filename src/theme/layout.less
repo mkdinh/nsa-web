@@ -1,0 +1,21 @@
+.flex() {
+    display: flex;
+    flex: 1;
+  }
+
+.flex-align(@h-align: flex-start, @v-align: flex-start) {
+  justify-content: @h-align;
+  align-items: @v-align;
+}
+
+.h-flex(@h-align: flex-start, @v-align: flex-start) {
+  .flex();
+  .flex-align(@h-align, @v-align);
+  flex-direction: row;
+}
+
+.v-flex(@h-align: flex-start, @v-align: flex-start) {
+  .flex();
+  .flex-align(@h-align, @v-align);
+  flex-direction: column;
+}

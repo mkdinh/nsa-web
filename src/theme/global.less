@@ -1,0 +1,23 @@
+/*====================================
+=            BREAK POINTS            =
+====================================*/
+@extra-wide-screen-down: ~'(max-width: 1920px)';
+@wide-screen-down: ~'(max-width: 1600px)';
+@desktop-down: ~'(max-width: 991px)';
+@tablet-down: ~'(max-width: 767px)';
+@phone-down: ~'(max-width: 480px)';
+@small-phone-down: ~'(max-width: 320px)';
+
+@tablet-up: ~'(min-width: 768px)';
+@phone-up: ~'(min-width: 321px)';
+
+@primary-color: blue;
+@secondary-color: green;
+@tertiary-color: #ee442b;
+
+.flex(@vertical, @horizontal) {
+  flex: 1;
+  display: flex;
+  align-items: @vertical;
+  justify-content: @horizontal;
+}
