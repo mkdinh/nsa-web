@@ -16,4 +16,4 @@ A NSA-friendly application to track people through their ip address!
 
 ## Test
 
-`npm test`
+`yarn test`
