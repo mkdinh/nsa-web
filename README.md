@@ -17,3 +17,17 @@ A NSA-friendly application to track people through their ip address!
 ## Test
 
 `yarn test`
+
+## Futures on roadmap
+
+- Login page
+- UI to add new user
+- UI to update current user
+- UI to remove user
+
+## Additional dev works
+
+- Refactor some of the components to use React hooks.
+- Add integration tests
+- Increase unit test coverage
+- add a CI/CD pipeline
