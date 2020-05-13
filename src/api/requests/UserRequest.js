@@ -1,18 +1,20 @@
-import BaseRequest from './BaseRequest';
+import BaseRequest from "./BaseRequest";
 
 export default class UserRequest extends BaseRequest {
   constructor(config) {
-    super(config, options => {
+    super(config, (options) => {
       const baseUri = `/users`;
       return options.id ? `${baseUri}/${options.id}` : baseUri;
     });
   }
 
-  getUsers() {
-    return this.get({});
+  async getUsers() {
+    const response = await this.get({});
+    return response.data;
   }
 
-  getUser(id) {
-    return this.get({ id });
+  async getUser(id) {
+    const response = await this.get({ id });
+    return response.data;
   }
 }

@@ -1,18 +1,18 @@
-import React, { PureComponent } from 'react';
-import Loader from './Loader';
+import React, { PureComponent } from "react";
+import Loader from "./Loader";
 
-export default Incoming => {
+export default (Incoming) => {
   class PageComponent extends PureComponent {
     state = {
       isLoading: true,
-      display: 'none',
+      display: "none",
     };
 
     didRender = () => {
       setTimeout(() => {
         this.setState({
           isLoading: false,
-          display: 'block',
+          display: "block",
         });
       }, 750);
     };

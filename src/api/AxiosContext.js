@@ -1,9 +1,9 @@
-import axios from 'axios';
+import axios from "axios";
 
 export default class LocalContext {
   constructor() {
     this.requestOptions = {
-      withCredentials: true
+      withCredentials: false,
     };
   }
 

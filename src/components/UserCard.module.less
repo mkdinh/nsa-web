@@ -1,0 +1,42 @@
+.user-card {
+  position: absolute !important;
+  top: 0.5rem;
+  left: 5vw;
+  width: 90vw;
+}
+
+.user-app-version {
+  color: @secondary-color;
+}
+
+.user-content {
+  margin: 1rem 0;
+  height: 70vh;
+  overflow-y: auto;
+}
+
+.user-card-info {
+  margin-top: 2rem;
+}
+
+.user-bio {
+  margin: 1rem 0;
+}
+
+.mobile-expand-button {
+  .v-flex(center, center);
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0 0.5rem 0;
+  transition: background 250ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: @tertiary-color;
+  }
+}
+
+.not-mobile(
+  {.mobile-expand-button {display: none} .user-card {width: 20vw; top: auto;
+    bottom: 1rem; left: auto; right: 2rem} .user-content {height: auto;}}
+);
