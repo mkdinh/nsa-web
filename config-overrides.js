@@ -4,11 +4,10 @@ const {
   addWebpackAlias,
   useBabelRc,
 } = require("customize-cra");
-const { addGlobalLess } = require("./utils");
+const { addGlobalLess, copyDirectory } = require("./utils");
 const aliases = require("./aliases");
 
 const lessFiles = ["global.less", "colors.less", "layout.less", "media.less"];
-
 module.exports = override(
   useBabelRc(),
   addLessLoader({
@@ -17,5 +16,6 @@ module.exports = override(
     globalVars: { theme: aliases.theme },
   }),
   addWebpackAlias(aliases),
-  addGlobalLess(lessFiles)
+  addGlobalLess(lessFiles),
+  copyDirectory([{ context: ".", from: "public/images", to: "static/images" }])
 );
