@@ -7,6 +7,10 @@ export default class DevelopmentRequestProxy {
   }
 
   get url() {
+    if (!this.protocol && this.hostname) {
+      return "/api";
+    }
+
     return this.port
       ? `${this.protocol}://${this.hostname}:${this.port}/api`
       : `${this.protocol}://${this.hostname}/api`;

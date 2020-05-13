@@ -7,7 +7,7 @@ const config = {
     context: new AxiosContext(),
     proxy:
       process.env["NODE_ENV"] === "production"
-        ? new RequestProxy("production", "https", "placeholder")
+        ? new RequestProxy("production", "", "")
         : new RequestProxy("development", "http", "localhost", 3001),
   },
 };
