@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Layout } from "antd";
 import PropTypes from "prop-types";
 
@@ -18,9 +18,7 @@ const Home = (props) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isReady, setIsReady] = useState(false);
 
-  useEffect(() => {}, []);
-
-  useEffect(() => {
+  React.useEffect(() => {
     props.didRender();
     getUser(6);
     onReady();

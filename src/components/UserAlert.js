@@ -6,6 +6,7 @@ import "./UserAlert.module.less";
 function UserAlert(props) {
   const [style, setStyle] = useState({ opacity: 0 });
   const { user } = props;
+
   const message = `${user.firstName} is off the grid!`;
 
   useEffect(() => {

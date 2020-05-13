@@ -45,7 +45,11 @@ function UserCard(props) {
           </div>
         </div>
       )}
-      <span onClick={toggleExpand} styleName="mobile-expand-button">
+      <span
+        id="mobile-expand-button"
+        onClick={toggleExpand}
+        styleName="mobile-expand-button"
+      >
         {isExpand ? <CaretUpOutlined /> : <CaretDownOutlined />}
       </span>
     </Card>
@@ -53,7 +57,7 @@ function UserCard(props) {
 }
 
 UserCard.propTypes = {
-  user: PropTypes.shape({}),
+  user: PropTypes.object,
 };
 
 const bodyStyle = {
